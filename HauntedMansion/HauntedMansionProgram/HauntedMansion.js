@@ -4,14 +4,9 @@ Team Member:Mason
 Date: 1.26.2022
 Program: Obstical Course 
 */
-}async function startProgram() {
-// Write code here
 
-
-
-
-
-await scrollMatrixText('Start', {r: 66, g: 56, b: 225 }, 60, false);
+async function startProgram() {
+// Write code hereawait scrollMatrixText('Start', {r: 66, g: 56, b: 225 }, 60, false);
 // ScrollMatrixText begins the process of scrolling start, the RGB code sets the color, and 60 is the FPS of the scroll
 //false starts the line of code without delay
 await roll(0, 50, 2.8);
@@ -24,9 +19,12 @@ await roll(130, 50, 1.4);
 //Changes angle & moves to the sound key
 await Sound.Animal.Chicken.play(true);
 //Plays animal sound
-
-
-
-
-
+await roll(220, 50, 1);
+//Moves bolt direction twords the red key
+setMainLed({ r: 255, g: 0, b: 0 }, 10, false);
+//changes LED to red
+await roll(90, 50, 1);
+//Changes direction & moves the bolt
 }
+
+
