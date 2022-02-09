@@ -29,28 +29,27 @@ setMainLed({ r: 255, g: 0, b: 0 }, 10, false);
 //Sets main Led to Red
 await roll(140, 50, .9);
 //Moves Sphero to move twords the next checkpoint
-await roll(45, 50, 2);
+await roll(45, 50, 1.7);
 //Moves twords checkpoint
 await roll(135, 50, 1.9);
 //Moves twords checkpoint
-setMainLed({ r: 0, g: 255, b: 0 }, 10, false);
-//sets LED to green
 await Sound.Animal.Dolphin.play(true);
 //Plays Dolphin sounds
+setMainLed({ r: 0, g: 255, b: 0 }, 10, false);
+//sets LED to green
 await roll(25, 50, 1);
 //Aligns for final streatch
-await roll (295, 50, 3);
+await roll (315, 50, 2.5);
 //final streatch alighnment
 await Sound.Animal.Elephant.play(true);
 //plays elephant sound
-
-
-
-
+await roll(315, 50, 2);
+//final end section
 setMainLed({ r: 128, g: 0, b: 128 }, 10, false);
 //sets color to purple
 
 
 
+}
 }
 }
