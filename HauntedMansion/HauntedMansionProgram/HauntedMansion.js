@@ -40,15 +40,17 @@ await Sound.Animal.Dolphin.play(true);
 await roll(25, 50, 1);
 //Aligns for final streatch
 await roll (295, 50, 3);
+//final streatch alighnment
+await Sound.Animal.Elephant.play(true);
+//plays elephant sound
 
 
 
-
-await Sound.Animal.Elephant.Play(true);
 
 setMainLed({ r: 128, g: 0, b: 128 }, 10, false);
 //sets color to purple
 
 
 
+}
 }
